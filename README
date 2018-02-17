@@ -1,0 +1,6 @@
+Demo Application to simulate Spring Boot Actuator Trace Requests
+
+Trace renders for GET Requests
+For POST Requests, there are parameters shown.
+
+Created this demo project to reproduce the issue.
