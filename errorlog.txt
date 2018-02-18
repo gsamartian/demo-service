@@ -1,20 +1,6 @@
-Demo Application to simulate Spring Boot Actuator Trace Requests
-================================================================
 
-Trace renders for GET Requests
-For POST Requests, there are parameters shown.
+=====if given as below in application configuration,
 
-Created this demo project to reproduce the issue.
-
-
-management.trace.PAYLOAD
-management.trace.PAYLOAD_RESPONSE
-
-properties are not recognized. They are even not part of the enum in 
-https://github.com/spring-projects/spring-boot/blob/v1.5.10.RELEASE/spring-boot-actuator/src/main/java/org/springframework/boot/actuate/trace/TraceProperties.java
-
-
-=====if given as below, 
 management.trace.include=PAYLOAD,PAYLOAD_RESPONSE
 The error response obtained is as below,
 
@@ -45,8 +31,9 @@ Action:
 
 Update your application's configuration
 
+========================
+=====if given as below in application configuration,
 
-=====if given as below, 
 management.trace.include=payload,payload_response
 
 error is
@@ -77,6 +64,3 @@ Binding to target org.springframework.boot.actuate.trace.TraceProperties@3b1bb3a
 Action:
 
 Update your application's configuration
-
-
-
